@@ -36,7 +36,7 @@ dspat=function(int.formula=~1,det.formula=~1,study.area,
 #   transects    - list of dataframes specifying polygonal transects
 #   covariate.im - list of covariate images (class im)
 #   study.area   - owin class of study area
-#   use.gam      - T/F whether gam was used
+#   use.gam      - TRUE/FALSE whether gam was used
 #
 # Jeff Laake
 # 9 April 2008

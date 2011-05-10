@@ -118,7 +118,7 @@ log.normal.ci=function(est,se)
   if(!se) return(list(abundance=mu.B,distribution=distribution,
             lambda=im.clipped(lambda,B.mask), W=B.mask))
 #
-# If se=T compute standard error and confidence interval
+# If se=TRUE compute standard error and confidence interval
 #
   if(x$use.gam)
        mm = predict(x$model$internal$glmfit,type="lpmatrix",newdata=covData)

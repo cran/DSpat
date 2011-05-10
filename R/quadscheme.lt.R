@@ -98,10 +98,10 @@ function(study.area,observations,lines,width=NULL,epsvu=c(1,.01),show.warnings=F
     dummyLst[[i]]=rotate(dummyLst[[i]],angle=-angles[i])
    }
 #  Create observation ppp and dummy ppp;gridwe a label is added to obs.ppp and dummy.ppp
-
    obs.ppp=ppp(observations$x,observations$y,window=owin(poly=transects))
    obs.ppp$label=observations$label
-   dummy.ppp = superimpose(dummyLst,W=owin(poly=transects))
+   dummy.ppp = do.call(superimpose, append(dummyLst, list(W=owin(poly=transects))))
+#   dummy.ppp = superimpose(dummyLst,W=owin(poly=transects))
    dummy.ppp$label=DummyLabels
 #  Order wts and then create quadrature
    wts=c(wData,wDummy)

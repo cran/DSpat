@@ -49,9 +49,7 @@ simDSpat(study.area=owin(xrange=c(0,100),yrange=c(0,100)),covariates,
                    and x1,y1 is end of the line}
    \item{observations}{a dataframe of the coordinates of the observed points}
 }
-\details{
 
-}
 \author{Jeff Laake}
 \seealso{ \code{\link{simCovariates}},\code{\link{simPts}}}
 \examples{

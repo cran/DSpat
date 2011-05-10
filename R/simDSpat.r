@@ -64,7 +64,7 @@ simDSpat=function(study.area=owin(xrange=c(0,100),yrange=c(0,100)),covariates,
 #  Sample points via lines and detection
    observations=sample.points(ls$transects,xlines,obs,detfct=hndetfct,
                 det.par=det.par,det.formula=det.formula,covariates=covariates)
-#  If showplot=T, show points and lines
+#  If showplot=TRUE, show points and lines
    if(showplot & showlines)
    {
       plot(ls$lines,lty=2,add=TRUE)

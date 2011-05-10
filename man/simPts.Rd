@@ -31,8 +31,6 @@ simPts(covariates,int.formula=~1, int.par=c(1), EN=100,
 }
 \value{ppp object of point locations
 }
-\details{
-}
 \author{ Devin Johnson; Jeff Laake}
 \seealso{ \code{\link{simCovariates}}}
 \examples{
